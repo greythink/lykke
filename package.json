@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve & postcss styles/tailwind.css --o _site/style.css --watch"
+    "start": "npx @11ty/eleventy --serve & postcss ./styles/tailwind.css -i ./styles/tailwind.css -c ./styles/tailwind.config.js -o _site/style.css --watch"
   },
   "keywords": [],
   "author": "",
