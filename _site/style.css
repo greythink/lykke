@@ -572,6 +572,10 @@ video {
 	font-size: 1.875rem;
 	line-height: 2.25rem;
 }
+  .title-h2 {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+}
   .title-h3 {
 	font-size: 1.125rem;
 	line-height: 1.75rem;
@@ -613,6 +617,9 @@ video {
 		max-width: 1536px;
 	}
 }
+.block {
+	display: block;
+}
 .flex {
 	display: flex;
 }
@@ -621,6 +628,9 @@ video {
 }
 .justify-center {
 	justify-content: center;
+}
+.justify-between {
+	justify-content: space-between;
 }
 .rounded-lg {
 	border-radius: 0.5rem;
@@ -632,6 +642,10 @@ video {
 .py-24 {
 	padding-top: 6rem;
 	padding-bottom: 6rem;
+}
+.py-6 {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
 }
 .text-5xl {
 	font-size: 3rem;
