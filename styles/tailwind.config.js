@@ -18,6 +18,10 @@ module.exports = {
           'dark-grey': '#D4D4D4',
         },
       },
+      maxWidth: theme => theme('spacing'),
+      spacing: {
+        legible: '80ch',
+      },
     },
   },
   variants: {},
