@@ -566,6 +566,11 @@ video {
 [hidden] {
   display: none;
 }
+
+*, ::before, ::after {
+	--tw-border-opacity: 1;
+	border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+}
   /* Typography */
   .title-h1 {
 	padding-bottom: 1.5rem;
@@ -635,6 +640,13 @@ video {
 .rounded-lg {
 	border-radius: 0.5rem;
 }
+.border-b {
+	border-bottom-width: 1px;
+}
+.border-brand-dark-grey {
+	--tw-border-opacity: 1;
+	border-color: rgba(212, 212, 212, var(--tw-border-opacity));
+}
 .bg-brand-grey {
 	--tw-bg-opacity: 1;
 	background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
@@ -643,8 +655,10 @@ video {
 	padding-top: 6rem;
 	padding-bottom: 6rem;
 }
-.py-6 {
+.pt-6 {
 	padding-top: 1.5rem;
+}
+.pb-6 {
 	padding-bottom: 1.5rem;
 }
 .text-5xl {

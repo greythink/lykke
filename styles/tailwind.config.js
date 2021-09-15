@@ -15,6 +15,7 @@ module.exports = {
       colors: {
         brand: {
           grey: '#E5E7EB',
+          'dark-grey': '#D4D4D4',
         },
       },
     },
