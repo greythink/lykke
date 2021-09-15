@@ -7,12 +7,14 @@
         </span>
       </h1>
     </a>
-    <ul class="">
-      <li class="">
-        <a href="#about">
-          About
-        </a>
-      </li>
+    <ul class="flex items-center">
+      {% for item in navItemList %}
+        <li class="mr-4 last:mr-0">
+          <a href="{{ item.target }}">
+            {{ item.label }}
+          </a>
+        </li>
+      {% endfor %}
     </ul>
   </div>
 </header>
