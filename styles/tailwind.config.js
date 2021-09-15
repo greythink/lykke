@@ -11,7 +11,13 @@ module.exports = {
       center: true,
       padding: '1.5rem',
     },
-    extend: {},
+    extend: {
+      colors: {
+        brand: {
+          grey: '#E5E7EB',
+        },
+      },
+    },
   },
   variants: {},
   plugins: [],
