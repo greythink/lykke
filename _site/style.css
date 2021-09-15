@@ -566,6 +566,16 @@ video {
 [hidden] {
   display: none;
 }
+  /* Typography */
+  .title-h1 {
+	padding-bottom: 1.5rem;
+	font-size: 1.875rem;
+	line-height: 2.25rem;
+}
+  .title-h3 {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+}
 .container {
 	width: 100%;
 	margin-right: auto;
@@ -603,7 +613,48 @@ video {
 		max-width: 1536px;
 	}
 }
+.flex {
+	display: flex;
+}
+.flex-col {
+	flex-direction: column;
+}
+.justify-center {
+	justify-content: center;
+}
+.rounded-lg {
+	border-radius: 0.5rem;
+}
 .bg-brand-grey {
 	--tw-bg-opacity: 1;
 	background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+}
+.py-24 {
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+}
+.text-5xl {
+	font-size: 3rem;
+	line-height: 1;
+}
+
+
+
+@media (min-width: 640px) {
+
+	.sm\:flex {
+		display: flex;
+	}
+
+	.sm\:w-3\/5 {
+		width: 60%;
+	}
+
+	.sm\:w-2\/5 {
+		width: 40%;
+	}
+
+	.sm\:pr-12 {
+		padding-right: 3rem;
+	}
 }
