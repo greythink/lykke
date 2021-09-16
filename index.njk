@@ -45,4 +45,35 @@
       </ul>
     </section>
   </main>
+
+  {% if teamList|length %}
+    <section class="container my-24">
+      <h1 class="title-h1 uppercase">
+        Team
+      </h1>
+      <h3 class="max-w-legible title-h3">
+        Our team has a wealth of expertise in the global investment and sustainability arena. Our network, experience, and knowledge extend from the fields of sub-Saharan Africa to the trading desks of Wall Street.
+      </h3>
+      <ul class="mt-12">
+        {% for person in teamList %}
+          <li class="flex mb-12 last:mb-0">
+            <figure class="mr-12">
+              <img class="max-h-48" src="{{ person.image }}" alt="{{ person.title }}">
+            </figure>
+            <div>
+              <h2 class="title-h2 mb-3">
+                {{ person.title }}
+              </h2>
+              <p class="max-w-legible mb-3">
+                {{ person.description }}
+              </p>
+              <a class="block icon icon-linkedin h-6 w-6" href="{{ person.linkedin }}" class="block">
+                <span class="sr-only">{{ person.title }}'s LinkedIn</span>
+              </a>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
 {% endblock %}

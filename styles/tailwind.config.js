@@ -12,6 +12,9 @@ module.exports = {
       padding: '1.5rem',
     },
     extend: {
+      backgroundSize: {
+        'h-6': 'auto 1.5rem',
+      },
       colors: {
         brand: {
           grey: '#E5E7EB',

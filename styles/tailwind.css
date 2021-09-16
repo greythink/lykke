@@ -11,3 +11,14 @@
   .title-h3 { @apply text-xl mb-4; }
   .title-h4 { @apply text-md; }
 }
+
+
+
+@layer components {
+  .icon {
+    @apply bg-h-6 bg-no-repeat;
+  }
+  .icon-linkedin {
+    background-image: url("./img/icons/linkedin.svg");
+  }
+}
