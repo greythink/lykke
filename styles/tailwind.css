@@ -5,11 +5,19 @@
 
 
 @layer base {
+  /* Responsive sizes */
+  @screen sm {
+    html {
+      font-size: 20px;
+    }
+  }
+
+  
   /* Typography */
-  .title-h1 { @apply text-5xl mb-8; }
-  .title-h2 { @apply text-3xl mb-6; }
-  .title-h3 { @apply text-xl mb-4; }
-  .title-h4 { @apply text-md; }
+  .title-h1 { @apply text-4xl mb-8; }
+  .title-h2 { @apply text-2xl mb-6; }
+  .title-h3 { @apply text-lg mb-4; }
+  .title-h4 { @apply text-base; }
 }
 
 

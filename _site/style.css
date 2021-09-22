@@ -571,20 +571,28 @@ video {
 	--tw-border-opacity: 1;
 	border-color: rgba(229, 231, 235, var(--tw-border-opacity));
 }
+  /* Responsive sizes */
+  @media (min-width: 768px) {
+    html {
+      font-size: 20px;
+    }
+  }
+
+  
   /* Typography */
   .title-h1 {
 	margin-bottom: 2rem;
-	font-size: 3rem;
-	line-height: 1;
+	font-size: 2.25rem;
+	line-height: 2.5rem;
 }
   .title-h2 {
 	margin-bottom: 1.5rem;
-	font-size: 1.875rem;
-	line-height: 2.25rem;
+	font-size: 1.5rem;
+	line-height: 2rem;
 }
   .title-h3 {
 	margin-bottom: 1rem;
-	font-size: 1.25rem;
+	font-size: 1.125rem;
 	line-height: 1.75rem;
 }
 .container {
@@ -604,6 +612,12 @@ video {
 
 	.container {
 		max-width: 1024px;
+	}
+}
+@media (min-width: 1280px) {
+
+	.container {
+		max-width: 1280px;
 	}
 }
 @media (min-width: 1536px) {
@@ -718,15 +732,23 @@ video {
 	padding-top: 1.5rem;
 	padding-bottom: 1.5rem;
 }
+.py-20 {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+.py-16 {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
 .pt-6 {
 	padding-top: 1.5rem;
 }
 .pb-6 {
 	padding-bottom: 1.5rem;
 }
-.text-5xl {
-	font-size: 3rem;
-	line-height: 1;
+.text-4xl {
+	font-size: 2.25rem;
+	line-height: 2.5rem;
 }
 .uppercase {
 	text-transform: uppercase;
@@ -762,5 +784,10 @@ video {
 
 	.sm\:w-1\/2 {
 		width: 50%;
+	}
+
+	.sm\:py-20 {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
 	}
 }
