@@ -12,10 +12,9 @@ module.exports = {
       padding: '1.5rem',
     },
     screens: {
-      'xl': '480px',
       'sm': '768px',
       'md': '1024px',
-      'lg': '1440px',
+      'lg': '1536px',
     },
     extend: {
       backgroundSize: {

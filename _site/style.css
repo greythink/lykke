@@ -594,12 +594,6 @@ video {
 	padding-right: 1.5rem;
 	padding-left: 1.5rem;
 }
-@media (min-width: 480px) {
-
-	.container {
-		max-width: 480px;
-	}
-}
 @media (min-width: 768px) {
 
 	.container {
@@ -612,10 +606,10 @@ video {
 		max-width: 1024px;
 	}
 }
-@media (min-width: 1440px) {
+@media (min-width: 1536px) {
 
 	.container {
-		max-width: 1440px;
+		max-width: 1536px;
 	}
 }
 .icon {
