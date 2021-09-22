@@ -11,6 +11,12 @@ module.exports = {
       center: true,
       padding: '1.5rem',
     },
+    screens: {
+      'xl': '480px',
+      'sm': '768px',
+      'md': '1024px',
+      'lg': '1440px',
+    },
     extend: {
       backgroundSize: {
         'h-6': 'auto 1.5rem',
