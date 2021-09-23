@@ -3,7 +3,7 @@
 
 
 {% block content %}
-  <section class="bg-brand-grey py-16 sm:py-20" id="about">
+  <section class="bg-brand-grey py-16 sm:py-20 mb-16 sm:mb-20" id="about">
     <div class="container">
       <div class="sm:flex gap-x-12">
         <div class="sm:w-3/5 flex flex-col justify-center mb-8 sm:mb-0">
@@ -21,17 +21,17 @@
     </div>
   </section>
 
-  <main class="container my-16 sm:my-20" id="services">
+  <main class="container mb-24 sm:mb-32" id="services">
     <h2 class="title-h1 uppercase">
       Services
     </h2>
-    <h3 class="max-w-legible title-h3">
+    <h3 class="max-w-legible title-h3 mb-8 last:mb-0">
       We research and analyze global sustainability, investment, and healthcare trends to provide our clients with the insight they need to make informed decisions about how to invest, operate, and innovate in a sustainable manner.
     </h3>
-    <section class="mt-10">
+    <section class="mb-8 last:mb-0">
       <ul class="sm:flex gap-x-12">
         {% for service in serviceList %}
-          <li class="sm:w-1/2 mb-8 sm:mb-0 last:mb-0 bg-brand-grey px-8 py-6 rounded-lg">
+          <li class="sm:w-1/2 mb-6 sm:mb-0 last:mb-0 bg-brand-grey px-8 py-6 rounded-lg">
             <article>
               <h2 class="title-h2 mb-4">
                 {{ service.title }}
@@ -47,21 +47,21 @@
   </main>
 
   {% if teamList|length %}
-    <section class="container my-16 sm:my-24">
+    <section class="container mb-16 sm:mb-20">
       <h1 class="title-h1 uppercase">
         Team
       </h1>
-      <h3 class="max-w-legible title-h3">
+      <h3 class="max-w-legible title-h3 mb-8 last:mb-0">
         Our team has a wealth of expertise in the global investment and sustainability arena. Our network, experience, and knowledge extend from the fields of sub-Saharan Africa to the trading desks of Wall Street.
       </h3>
-      <ul class="mt-12">
+      <ul class="mb-8 last:mb-0">
         {% for person in teamList %}
-          <li class="flex mb-8 sm:mb-12 last:mb-0">
+          <li class="flex mb-6 last:mb-0">
             <figure class="mr-6 sm:mr-12">
               <img class="max-h-48" src="{{ person.image }}" alt="{{ person.title }}">
             </figure>
             <div>
-              <h2 class="title-h2 mb-3">
+              <h2 class="title-h2 mb-2">
                 {{ person.title }}
               </h2>
               <p class="max-w-legible mb-3">
