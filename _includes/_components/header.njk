@@ -1,11 +1,16 @@
+{% set headerUrl = page.url %}
+{% set headerLogoHeading = 'h1' if headerUrl === '/' else 'h2' %}
+
+
+
 <header class="pt-6 bg-brand-grey">
   <div class="container flex justify-between pb-6 border-b border-brand-dark-grey">
     <a class="block" href="./">
-      <h2 class="title-h2 mb-0">
+      <{{ headerLogoHeading }} class="title-h2 mb-0">
         <span>
           Lykke Group
         </span>
-      </h2>
+      </{{ headerLogoHeading }}>
     </a>
     <ul class="flex items-center">
       {% for item in navItemList %}
