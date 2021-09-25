@@ -1,6 +1,8 @@
 module.exports = function(eleventyConfig) {
   eleventyConfig.setTemplateFormats('njk');
   eleventyConfig.addWatchTarget('./styles/');
-  eleventyConfig.addPassthroughCopy("img");
-  eleventyConfig.addPassthroughCopy("robots.txt");
+  eleventyConfig.addWatchTarget('./scripts/');
+  eleventyConfig.addPassthroughCopy('img');
+  eleventyConfig.addPassthroughCopy({ 'scripts': '.' });
+  eleventyConfig.addPassthroughCopy('robots.txt');
 }
