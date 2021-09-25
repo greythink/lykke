@@ -636,7 +636,6 @@ video {
   }
 .icon-hamburger {
     background-image: url("./img/icons/hamburger.svg");
-    background-size: 2rem 2rem;
   }
 /* Toggle Menu */
 .toggle-trigger {
@@ -779,6 +778,9 @@ video {
 .bg-brand-light-grey {
 	--tw-bg-opacity: 1;
 	background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+}
+.bg-w-8 {
+	background-size: 2rem auto;
 }
 .py-4 {
 	padding-top: 1rem;

@@ -14,7 +14,7 @@
 
   /* Container Reset */
   @responsive {
-    .container-reset { @apply px-0 mx-0 }
+    .container-reset { @apply px-0 mx-0; }
   }
 
   /* Typography */
@@ -35,11 +35,15 @@
   }
   .icon-hamburger {
     background-image: url("./img/icons/hamburger.svg");
-    background-size: 2rem 2rem;
+  }
+  .icon-cross {
+    background-image: url("./img/icons/cross.svg");
   }
 
   /* Toggle Menu */
-  .toggle-trigger { @apply cursor-pointer block; }
+  .toggle-trigger {
+    @apply cursor-pointer block;
+  }
   .toggle-controller { @apply sr-only; }
   .toggle-content {
     opacity: 1;

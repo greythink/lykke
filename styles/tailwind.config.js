@@ -27,6 +27,7 @@ module.exports = {
     extend: {
       backgroundSize: {
         'h-6': 'auto 1.5rem',
+        'w-8': '2rem auto',
       },
       colors: {
         brand: {
