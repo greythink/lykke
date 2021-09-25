@@ -27,6 +27,15 @@
   .title-h2 { @apply text-2xl mb-4; }
   .title-h3 { @apply text-lg mb-4; }
   .title-h4 { @apply text-base; }
+  
+  .prose a { 
+    @apply underline;
+    text-decoration-color: theme('colors.brand.darker-grey');
+  }
+  .prose a:visited { @apply text-current; }
+  .prose a:hover {
+    text-decoration-color: inherit;
+  }
 }
 
 

@@ -34,6 +34,7 @@ module.exports = {
           grey: '#E5E7EB',
           'light-grey': '#F3F4F6',
           'dark-grey': '#D4D4D4',
+          'darker-grey': '#A3A3A3',
         },
       },
       maxWidth: theme => theme('spacing'),

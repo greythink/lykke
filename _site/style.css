@@ -601,6 +601,19 @@ video {
 	font-size: 1.125rem;
 	line-height: 1.75rem;
 }
+  
+  .prose a {
+	text-decoration: underline;
+    -webkit-text-decoration-color: #A3A3A3;
+            text-decoration-color: #A3A3A3;
+}
+  .prose a:visited {
+	color: currentColor;
+}
+  .prose a:hover {
+    -webkit-text-decoration-color: inherit;
+            text-decoration-color: inherit;
+  }
 .container {
 	width: 100%;
 	margin-right: auto;
