@@ -4,22 +4,32 @@
 
 
 <header class="pt-6 bg-brand-grey">
-  <div class="container flex justify-between pb-6 border-b border-brand-dark-grey">
-    <a class="block" href="./">
-      <{{ headerLogoHeading }} class="title-h2 mb-0">
-        <span>
-          Lykke Group
-        </span>
-      </{{ headerLogoHeading }}>
-    </a>
-    <ul class="flex items-center">
-      {% for item in navItemList %}
-        <li class="mr-4 last:mr-0">
-          <a href="{{ item.target }}">
-            {{ item.label }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+  <div class="container sm:flex justify-between pb-6 border-b border-brand-dark-grey">
+    <div class="flex justify-between items-center">
+      <a class="block" href="./">
+        <{{ headerLogoHeading }} class="title-h2 mb-0">
+          <span>
+            Lykke Group
+          </span>
+        </{{ headerLogoHeading }}>
+      </a>
+      <label class="toggle-trigger sm:toggle-hidden icon icon-hamburger w-8 h-8" for="header-nav-toggle">
+        <span class="sr-only">Main Menu</span>
+      </label>
+    </div>
+    <div class="relative w-full sm:w-auto sm:flex items-center">
+      <input class="toggle-controller sm:toggle-hidden" id="header-nav-toggle" type="checkbox" />
+      <nav class="absolute top-6 sm:static toggle-content sm:toggle-content-visible">
+        <ul class="flex items-center">
+          {% for item in navItemList %}
+            <li class="mr-4 sm:last:mr-0">
+              <a href="{{ item.target }}">
+                {{ item.label }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>

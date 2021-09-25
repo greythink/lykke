@@ -29,4 +29,32 @@
   .icon-linkedin {
     background-image: url("./img/icons/linkedin.svg");
   }
+  .icon-hamburger {
+    background-image: url("./img/icons/hamburger.svg");
+    background-size: 2rem 2rem;
+  }
+
+  /* Toggle Menu */
+  .toggle-trigger { @apply cursor-pointer block; }
+  .toggle-controller { @apply sr-only; }
+  .toggle-content {
+    opacity: 1;
+    overflow: visible;
+    transform-origin: top center;
+    transform: translateY(0) scaleY(1);
+    transition: all ease 0.3s;
+  }
+  .toggle-controller:not(:checked) ~ .toggle-content {
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-1rem) scaleY(0);
+  }
+  @responsive {
+    .toggle-hidden { @apply hidden; }
+    .toggle-content-visible {
+      opacity: 1 !important;
+      overflow: visible !important;
+      transform: scaleY(1) !important;
+    }
+  }
 }

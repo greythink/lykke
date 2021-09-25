@@ -633,6 +633,38 @@ video {
 .icon-linkedin {
     background-image: url("./img/icons/linkedin.svg");
   }
+.icon-hamburger {
+    background-image: url("./img/icons/hamburger.svg");
+    background-size: 2rem 2rem;
+  }
+/* Toggle Menu */
+.toggle-trigger {
+	display: block;
+	cursor: pointer;
+}
+.toggle-controller {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
+.toggle-content {
+    opacity: 1;
+    overflow: visible;
+    transform-origin: top center;
+    transform: translateY(0) scaleY(1);
+    transition: all ease 0.3s;
+  }
+.toggle-controller:not(:checked) ~ .toggle-content {
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-1rem) scaleY(0);
+  }
 .sr-only {
 	position: absolute;
 	width: 1px;
@@ -643,6 +675,15 @@ video {
 	clip: rect(0, 0, 0, 0);
 	white-space: nowrap;
 	border-width: 0;
+}
+.absolute {
+	position: absolute;
+}
+.relative {
+	position: relative;
+}
+.top-6 {
+	top: 1.5rem;
 }
 .mb-0 {
 	margin-bottom: 0px;
@@ -680,11 +721,20 @@ video {
 .flex {
 	display: flex;
 }
+.h-8 {
+	height: 2rem;
+}
 .h-6 {
 	height: 1.5rem;
 }
 .max-h-48 {
 	max-height: 12rem;
+}
+.w-8 {
+	width: 2rem;
+}
+.w-full {
+	width: 100%;
 }
 .w-6 {
 	width: 1.5rem;
@@ -753,12 +803,6 @@ video {
 
 
 
-.last\:mr-0:last-child {
-	margin-right: 0px;
-}
-
-
-
 .last\:mb-0:last-child {
 	margin-bottom: 0px;
 }
@@ -766,41 +810,49 @@ video {
 
 
 @media (min-width: 768px) {
-
-	.sm\:mb-20 {
+    .sm\:toggle-hidden {
+		display: none;
+	}
+    .sm\:toggle-content-visible {
+      opacity: 1 !important;
+      overflow: visible !important;
+      transform: scaleY(1) !important;
+    }
+    .sm\:static {
+		position: static;
+	}
+    .sm\:mb-20 {
 		margin-bottom: 5rem;
 	}
-
-	.sm\:mb-0 {
+    .sm\:mb-0 {
 		margin-bottom: 0px;
 	}
-
-	.sm\:mb-32 {
+    .sm\:mb-32 {
 		margin-bottom: 8rem;
 	}
-
-	.sm\:mr-12 {
+    .sm\:mr-12 {
 		margin-right: 3rem;
 	}
-
-	.sm\:flex {
+    .sm\:flex {
 		display: flex;
 	}
-
-	.sm\:w-3\/5 {
+    .sm\:w-auto {
+		width: auto;
+	}
+    .sm\:w-3\/5 {
 		width: 60%;
 	}
-
-	.sm\:w-2\/5 {
+    .sm\:w-2\/5 {
 		width: 40%;
 	}
-
-	.sm\:w-1\/2 {
+    .sm\:w-1\/2 {
 		width: 50%;
 	}
-
-	.sm\:py-20 {
+    .sm\:py-20 {
 		padding-top: 5rem;
 		padding-bottom: 5rem;
+	}
+    .sm\:last\:mr-0:last-child {
+		margin-right: 0px;
 	}
 }
