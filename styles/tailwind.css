@@ -12,7 +12,11 @@
     }
   }
 
-  
+  /* Container Reset */
+  @responsive {
+    .container-reset { @apply px-0 mx-0 }
+  }
+
   /* Typography */
   .title-h1 { @apply text-4xl mb-8; }
   .title-h2 { @apply text-2xl mb-4; }
@@ -41,13 +45,13 @@
     opacity: 1;
     overflow: visible;
     transform-origin: top center;
-    transform: translateY(0) scaleY(1);
-    transition: all ease 0.3s;
+    transform: scaleY(1);
+    transition: all 0.2s ease-in-out;
   }
   .toggle-controller:not(:checked) ~ .toggle-content {
     opacity: 0;
     overflow: hidden;
-    transform: translateY(-1rem) scaleY(0);
+    transform: scaleY(0);
   }
   @responsive {
     .toggle-hidden { @apply hidden; }

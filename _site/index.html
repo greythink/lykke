@@ -17,8 +17,8 @@
 
 
 <header class="pt-6 bg-brand-grey">
-  <div class="container sm:flex justify-between pb-6 border-b border-brand-dark-grey">
-    <div class="flex justify-between items-center">
+  <div class="sm:container sm:flex justify-between pb-6 border-b border-brand-dark-grey">
+    <div class="container sm:container-reset flex justify-between items-center">
       <a class="block" href="./">
         <h1 class="title-h2 mb-0">
           <span>
@@ -30,19 +30,19 @@
         <span class="sr-only">Main Menu</span>
       </label>
     </div>
-    <div class="relative w-full sm:w-auto sm:flex items-center">
+    <div class="relative top-6 sm:top-0 w-full sm:w-auto sm:flex items-center">
       <input class="toggle-controller sm:toggle-hidden" id="header-nav-toggle" type="checkbox" />
-      <nav class="absolute top-6 sm:static toggle-content sm:toggle-content-visible">
-        <ul class="flex items-center">
+      <nav class="toggle-content sm:toggle-content-visible absolute top-px sm:static w-full sm:w-auto bg-brand-grey">
+        <ul class="flex flex-col sm:flex-row sm:items-center">
           
-            <li class="mr-4 sm:last:mr-0">
-              <a href="#about">
+            <li class="sm:mr-4 sm:last:mr-0">
+              <a class="block py-4 sm:py-0 container sm:container-reset bg-brand-light-grey sm:bg-transparent border-b sm:border-none border-brand-dark-grey hover:underline" href="#about">
                 About
               </a>
             </li>
           
-            <li class="mr-4 sm:last:mr-0">
-              <a href="#services">
+            <li class="sm:mr-4 sm:last:mr-0">
+              <a class="block py-4 sm:py-0 container sm:container-reset bg-brand-light-grey sm:bg-transparent border-b sm:border-none border-brand-dark-grey hover:underline" href="#services">
                 Services
               </a>
             </li>
