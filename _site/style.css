@@ -578,6 +578,11 @@ video {
     }
   }
 
+  /* Smooth Scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
   /* Container Reset */
 
   /* Typography */
@@ -627,6 +632,7 @@ video {
 		max-width: 1536px;
 	}
 }
+/* Icons */
 .icon {
 	background-size: auto 1.5rem;
 	background-repeat: no-repeat;
@@ -811,12 +817,21 @@ video {
 .uppercase {
 	text-transform: uppercase;
 }
+
+
+
 .last\:mb-0:last-child {
 	margin-bottom: 0px;
 }
+
+
+
 .hover\:underline:hover {
 	text-decoration: underline;
 }
+
+
+
 @media (min-width: 768px) {
     .sm\:container-reset {
 		margin-left: 0px;
