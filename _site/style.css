@@ -830,6 +830,9 @@ video {
 .uppercase {
 	text-transform: uppercase;
 }
+.tracking-wide {
+	letter-spacing: 0.025em;
+}
 
 
 
