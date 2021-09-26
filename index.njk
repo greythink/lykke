@@ -33,7 +33,7 @@
         {% for service in serviceList %}
           <li class="sm:w-1/2 mb-6 sm:mb-0 last:mb-0 bg-brand-grey px-8 py-6 rounded">
             <article>
-              <h2 class="title-h2 mb-4">
+              <h2 class="title-h2">
                 {{ service.title }}
               </h2>
               <p>
@@ -56,12 +56,12 @@
       </h3>
       <ul class="mb-8 last:mb-0">
         {% for person in teamList %}
-          <li class="flex mb-6 last:mb-0">
+          <li class="flex mb-8 last:mb-0">
             <figure class="mr-6 sm:mr-12 mt-2">
               <img class="max-h-48 rounded-full" src="{{ person.image }}" alt="{{ person.title }}">
             </figure>
             <div>
-              <h2 class="title-h2 mb-2">
+              <h2 class="title-h2">
                 {{ person.title }}
               </h2>
               <p class="max-w-60ch mb-3">
