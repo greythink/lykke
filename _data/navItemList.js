@@ -4,4 +4,7 @@ module.exports = [{
 },{
   target: '#services',
   label: 'Services',
+},{
+  target: '#team',
+  label: 'Team',
 }];
