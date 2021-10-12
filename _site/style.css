@@ -833,12 +833,21 @@ video {
 .tracking-wide {
 	letter-spacing: 0.025em;
 }
+
+
+
 .last\:mb-0:last-child {
 	margin-bottom: 0px;
 }
+
+
+
 .hover\:underline:hover {
 	text-decoration: underline;
 }
+
+
+
 @media (min-width: 768px) {
     .sm\:container-reset {
 		margin-left: 0px;
