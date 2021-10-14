@@ -8,10 +8,10 @@
       <div class="sm:flex gap-x-12">
         <div class="sm:w-3/5 flex flex-col justify-center mb-8 sm:mb-0">
           <h3 class="title-h1 text-4xl">
-            Lykke Group is a global investment and alternative asset management and advisory firm.
+            Lykke Capital’s Healthcare practice helps navigate the challenges of rare diseases.
           </h3>
           <h2 class="title-h3 mb-0 prose">
-            Lykke’s reputation for excellence is well known among investors and clients all around the world.
+            A trusted partner to <span class="font-bold">15+</span> leading life sciences companies, who continue to work with us year-over-year.
           </h2>
         </div>
         <figure class="sm:w-2/5">
@@ -21,23 +21,48 @@
     </div>
   </section>
 
+  <section class="container mb-20 sm:mb-24" id="services">
+    <h2 class="title-h1 uppercase tracking-wide">
+      Vectors
+    </h2>
+    <h3 class="max-w-70ch title-h3 mb-8 last:mb-0 prose">
+      We provide a comprehensive and end-to end supporting services for patients and caregivers. By combining human touch with superior technology, we enable patients, caregivers, patient advocacy groups, physicians and pharma companies better navigate the inherent challenges of rare diseases.
+    </h3>
+    <section class="mb-8 last:mb-0">
+      <ul class="sm:flex gap-x-8">
+        {% for vector in vectorList %}
+          <li class="sm:w-1/3 mb-6 sm:mb-0 last:mb-0 bg-brand-grey px-8 py-6 rounded">
+            <article>
+              <h2 class="title-h2">
+                {{ vector.title }}
+              </h2>
+              <p>
+                {{vector.description}}
+              </p>
+            </article>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  </section>
+
   <main class="container mb-20 sm:mb-24" id="services">
     <h2 class="title-h1 uppercase tracking-wide">
-      Services
+      Solutions
     </h2>
     <h3 class="max-w-70ch title-h3 mb-8 last:mb-0 prose">
       We research and analyze global sustainability, investment, and healthcare trends to provide our clients with the insight they need to make informed decisions about how to invest, operate, and innovate in a sustainable manner.
     </h3>
     <section class="mb-8 last:mb-0">
-      <ul class="sm:flex gap-x-12">
-        {% for service in serviceList %}
+      <ul class="sm:flex gap-x-8">
+        {% for solution in solutionList %}
           <li class="sm:w-1/2 mb-6 sm:mb-0 last:mb-0 bg-brand-grey px-8 py-6 rounded">
             <article>
               <h2 class="title-h2">
-                {{ service.title }}
+                {{ solution.title }}
               </h2>
               <p>
-                {{service.description}}
+                {{ solution.description }}
               </p>
             </article>
           </li>
@@ -45,35 +70,4 @@
       </ul>
     </section>
   </main>
-
-  {% if teamList|length %}
-    <section class="container mb-16 sm:mb-20" id="team">
-      <h1 class="title-h1 uppercase tracking-wide">
-        Team
-      </h1>
-      <h3 class="max-w-70ch title-h3 mb-8 last:mb-0 prose">
-        Our team has a wealth of expertise in the global investment and sustainability arena. Our network, experience, and knowledge extend from the fields of sub-Saharan Africa to the trading desks of Wall Street.
-      </h3>
-      <ul class="mb-8 last:mb-0">
-        {% for person in teamList %}
-          <li class="flex mb-8 last:mb-0">
-            <figure class="mr-6 sm:mr-12 mt-2">
-              <img class="max-h-48 rounded-full" src="{{ person.image }}" alt="{{ person.title }}">
-            </figure>
-            <div>
-              <h2 class="title-h2">
-                {{ person.title }}
-              </h2>
-              <p class="max-w-60ch mb-3">
-                {{ person.description }}
-              </p>
-              <a class="block icon icon-linkedin h-6 w-6" href="{{ person.linkedin }}" class="block">
-                <span class="sr-only">{{ person.title }}'s LinkedIn</span>
-              </a>
-            </div>
-          </li>
-        {% endfor %}
-      </ul>
-    </section>
-  {% endif %}
 {% endblock %}

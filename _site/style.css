@@ -777,6 +777,10 @@ video {
 	-moz-column-gap: 3rem;
 	     column-gap: 3rem;
 }
+.gap-x-8 {
+	-moz-column-gap: 2rem;
+	     column-gap: 2rem;
+}
 .rounded {
 	border-radius: 0.25rem;
 }
@@ -826,6 +830,9 @@ video {
 .text-4xl {
 	font-size: 2.25rem;
 	line-height: 2.5rem;
+}
+.font-bold {
+	font-weight: 700;
 }
 .uppercase {
 	text-transform: uppercase;
