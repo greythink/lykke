@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="{{ seo.robots }}">
-  <link rel="stylesheet" href="{{ 'style.css'|version }}">
+  <link rel="stylesheet" href="/{{ 'style.css'|version }}">
   <title>
     {{ seo.title }}
   </title>
@@ -16,6 +16,6 @@
   {% block content %}
     {{ content|safe }}
   {% endblock content %}
-  <script src="{{ 'script.js'|version }}"></script>
+  <script src="/{{ 'script.js'|version }}"></script>
 </body>
 </html>

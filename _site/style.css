@@ -651,10 +651,10 @@ video {
 	background-repeat: no-repeat;
 }
 .icon-linkedin {
-    background-image: url("./img/icons/linkedin.svg");
+    background-image: url("/img/icons/linkedin.svg");
   }
 .icon-hamburger {
-    background-image: url("./img/icons/hamburger.svg");
+    background-image: url("/img/icons/hamburger.svg");
   }
 /* Toggle Menu */
 .toggle-trigger {

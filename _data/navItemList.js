@@ -1,10 +1,7 @@
 module.exports = [{
-  target: '#about',
-  label: 'About',
+  target: '/capital',
+  label: 'Lykke Capital',
 },{
-  target: '#services',
-  label: 'Services',
-},{
-  target: '#team',
-  label: 'Team',
+  target: '/health',
+  label: 'Lykke Health',
 }];
