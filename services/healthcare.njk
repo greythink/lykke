@@ -8,7 +8,7 @@
       <div class="sm:flex gap-x-12">
         <div class="sm:w-3/5 flex flex-col justify-center mb-8 sm:mb-0">
           <h3 class="title-h1 text-4xl">
-            Lykke Capital’s Healthcare practice helps navigate the challenges of rare diseases.
+            Lykke Capital’s healthcare practice helps navigate the challenges of rare diseases.
           </h3>
           <h2 class="title-h3 mb-0 prose">
             A trusted partner to <span class="font-bold">15+</span> leading life sciences companies, who continue to work with us year-over-year.
@@ -29,9 +29,9 @@
       We provide a comprehensive and end-to end supporting services for patients and caregivers. By combining human touch with superior technology, we enable patients, caregivers, patient advocacy groups, physicians and pharma companies better navigate the inherent challenges of rare diseases.
     </h3>
     <section class="mb-8 last:mb-0">
-      <ul class="sm:flex gap-x-8">
+      <ul class="md:flex gap-x-8">
         {% for vector in vectorList %}
-          <li class="sm:w-1/3 mb-6 sm:mb-0 last:mb-0 bg-brand-grey px-8 py-6 rounded">
+          <li class="md:w-1/3 mb-6 md:mb-0 last:mb-0 bg-brand-grey px-8 py-6 rounded">
             <article>
               <h2 class="title-h2">
                 {{ vector.title }}
@@ -54,9 +54,9 @@
       We research and analyze global sustainability, investment, and healthcare trends to provide our clients with the insight they need to make informed decisions about how to invest, operate, and innovate in a sustainable manner.
     </h3>
     <section class="mb-8 last:mb-0">
-      <ul class="sm:flex gap-x-8">
+      <ul class="md:flex gap-x-8">
         {% for solution in solutionList %}
-          <li class="sm:w-1/2 mb-6 sm:mb-0 last:mb-0 bg-brand-grey px-8 py-6 rounded">
+          <li class="md:w-1/2 mb-6 md:mb-0 last:mb-0 bg-brand-grey px-8 py-6 rounded">
             <article>
               <h2 class="title-h2">
                 {{ solution.title }}
@@ -70,4 +70,13 @@
       </ul>
     </section>
   </main>
+
+  <section class="container mb-20 sm:mb-24" id="services">
+    <h2 class="title-h1 uppercase tracking-wide">
+      Careers
+    </h2>
+    <p class="max-w-70ch title-h3 mb-8 last:mb-0 prose">
+      Lykke Group’s team and board consists of entrepreneurs with decades of life science experience. As a company, we are flexible, ambitious, collaborative, and highly innovative. We are currently hiring for a range of positions, so if you are passionate for healthcare and believe in the use of advanced technology to prevent and treat disease, write to us at <a href="mailto:careers@lykkecapital.com">careers@lykkecapital.com</a>.
+    </p>
+  </section>
 {% endblock %}
