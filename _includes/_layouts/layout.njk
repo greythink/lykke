@@ -16,6 +16,7 @@
   {% block content %}
     {{ content|safe }}
   {% endblock content %}
+  {% include '_includes/_components/footer.njk' %}
   <script src="/{{ 'script.js'|version }}"></script>
 </body>
 </html>

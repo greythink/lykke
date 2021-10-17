@@ -1,0 +1,18 @@
+<footer class="container border-t border-brand-dark-grey py-8">
+  <div class="flex flex-col sm:flex-row gap-x-8 justify-between text-sm text-brand-darker-grey">
+    <p class="order-2 sm:order-1">
+      Copyright @2021 Lykke Group. All rights reserved.
+    </p>
+    {% if footerNavList|length %}
+      <ul class="sm:flex justify-end order-1">
+        {% for item in footerNavList %}
+          <li class="mb-1 last:mb-4 sm:mb-0 sm:last:mb-0 sm:first:mr-4">
+            <a class="border-b sm:border-none border-brand-dark-grey hover:underline" href="{{ item.target }}">
+              {{ item.label }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</footer>
