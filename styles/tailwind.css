@@ -36,6 +36,9 @@
   .prose a:hover {
     text-decoration-color: inherit;
   }
+  .prose a.button {
+    @apply inline-block px-4 py-2 bg-brand-blue text-white leading-none rounded-sm no-underline;
+  }
 }
 
 
