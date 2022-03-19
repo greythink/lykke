@@ -4,7 +4,4 @@ module.exports = [{
 },{
   title: 'Investments',
   description: 'Lykke Capital actively invests in technology start-ups in India, across sectors from seed to pre-Series A-stages.',
-},{
-  title: 'Healthcare',
-  description: 'Lykke Capital’s healthcare practice helps navigate the challenges of rare diseases.',
 }];
