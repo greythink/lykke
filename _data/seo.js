@@ -1,4 +1,4 @@
 module.exports = {
-  title: 'Lykke Capital',
+  title: 'Lykke Group',
   robots: 'noindex, nofollow',
 };
