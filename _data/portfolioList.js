@@ -3,7 +3,7 @@ module.exports = [{
   logo: '/img/portfolio/lets_dress_up.png',
   url: 'https://letsdressup.in/',
 },{
-  title: 'Glip (f/k/a ggtv)',
+  title: 'Glip (formerly ggtv)',
   logo: '/img/portfolio/glip.png',
   url: 'https://glip.gg/',
 },{
