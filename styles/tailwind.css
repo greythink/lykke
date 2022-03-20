@@ -28,6 +28,7 @@
   .title-h3 { @apply text-lg mb-4; }
   .title-h4 { @apply text-base; }
   
+  .prose p { @apply mb-2 last:mb-0; }
   .prose a { 
     @apply underline;
     text-decoration-color: theme('colors.brand.darker-grey');

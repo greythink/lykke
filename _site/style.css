@@ -606,6 +606,13 @@ video {
 	line-height: 1.5rem;
 }
   
+  .prose p {
+	margin-bottom: 0.5rem;
+}
+  
+  .prose p:last-child {
+	margin-bottom: 0px;
+}
   .prose a {
 	text-decoration: underline;
     -webkit-text-decoration-color: #A3A3A3;
@@ -753,9 +760,6 @@ video {
 .mb-2 {
 	margin-bottom: 0.5rem;
 }
-.mt-16 {
-	margin-top: 4rem;
-}
 .mb-4 {
 	margin-bottom: 1rem;
 }
@@ -872,16 +876,16 @@ video {
 	font-size: 0.75rem;
 	line-height: 1rem;
 }
+.text-lg {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+}
 .uppercase {
 	text-transform: uppercase;
 }
 .text-brand-darker-grey {
 	--tw-text-opacity: 1;
 	color: rgba(163, 163, 163, var(--tw-text-opacity));
-}
-.text-brand-dark-grey {
-	--tw-text-opacity: 1;
-	color: rgba(212, 212, 212, var(--tw-text-opacity));
 }
 .text-brand-blue {
 	--tw-text-opacity: 1;
@@ -890,27 +894,15 @@ video {
 .no-underline {
 	text-decoration: none;
 }
-
-
-
 .last\:mb-0:last-child {
 	margin-bottom: 0px;
 }
-
-
-
 .last\:mb-4:last-child {
 	margin-bottom: 1rem;
 }
-
-
-
 .hover\:underline:hover {
 	text-decoration: underline;
 }
-
-
-
 @media (min-width: 768px) {
     .sm\:container-reset {
 		margin-left: 0px;
@@ -1028,9 +1020,6 @@ video {
 		margin-bottom: 0px;
 	}
 }
-
-
-
 @media (min-width: 1024px) {
 
 	.md\:order-1 {
