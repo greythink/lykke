@@ -1,0 +1,31 @@
+{% extends 'lykke-capital/index.njk' %}
+
+
+
+{% block content %}
+  <main class="container my-16 sm:mt-20 sm:mb-24">
+    <section class="mb-16 sm:mb-24">
+      <h2 class="title-h1">
+        Press Coverage
+      </h2>
+      <section class="mb-8 last:mb-0">
+        <ul class="prose">
+          {% for article in pressList %}
+            <li class="mb-4 rounded">
+              <article>
+                <a href="{{ article.url }}">
+                  <h3 class="title-h4">
+                    {{ article.title }}
+                  </h3>
+                </a>
+                <h4 class="text-xs text-brand-darker-grey">
+                  {{ article.publication }}, {{ article.month }}
+                </h4>
+              </article>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    </section>
+  </main>
+{% endblock %}

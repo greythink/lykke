@@ -95,5 +95,35 @@
           {% endfor %}
         </ul>
       </section>
+    </section>
+
+    <section class="mb-16 sm:mb-24">
+      <h2 class="title-h1">
+        Press Coverage
+      </h2>
+      <section class="mb-8 last:mb-0">
+        <ul class="prose">
+          {% for article in pressList %}
+            {% if loop.index <= 5 %}
+              <li class="mb-4 rounded">
+                <article>
+                  <a href="{{ article.url }}">
+                    <h3 class="title-h4">
+                      {{ article.title }}
+                    </h3>
+                  </a>
+                  <h4 class="text-xs text-brand-darker-grey">
+                    {{ article.publication }}, {{ article.month }}
+                  </h4>
+                </article>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+        <a class="text-brand-blue" href="/press">
+          See more coverage
+        </a>
+      </section>
+    </section>
   </main>
 {% endblock %}
