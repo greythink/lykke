@@ -44,7 +44,7 @@
       </section>
     </section>
 
-    <section>
+    <section class="mb-16 sm:mb-24">
       <h2 class="title-h1">
         Investment Process
       </h2>
@@ -69,5 +69,31 @@
         <a class="button text-base uppercase" href="https://angel.co/lykke-capital/syndicate?utm_campaign=syndicate_direct_link">Apply</a>
       </div>
     </section>
+
+    <section class="mb-16 sm:mb-24">
+      <h2 class="title-h1">
+        Portfolio
+      </h2>
+      <h3 class="max-w-70ch title-h3 mb-8 last:mb-0 prose">
+        While we are sector-agnostic, our current portfolio includes companies in consumer technology, consumer brand, enterprise technology, and blockchain. Our latest investment (January 2022) was in the premium cosmetics brand, Plume Beauty.
+      </h3>
+      <section class="mb-8 last:mb-0">
+        <ul class="grid grid-cols-2 md:grid-cols-3 gap-x-8">
+          {% for company in portfolioList %}
+            <li class="mb-8 rounded">
+              <a href="{{ company.url }}">
+                <article>
+                  <figure class="mb-1">
+                    <img class="h-8" src="{{ company.logo }}" alt="{{ company.url + ' logo' }}">
+                  </figure>
+                  <h2 class="title-h4">
+                    {{ company.title }}
+                  </h2>
+                </article>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
   </main>
 {% endblock %}
