@@ -798,6 +798,9 @@ video {
 .grid {
 	display: grid;
 }
+.hidden {
+	display: none;
+}
 .h-8 {
 	height: 2rem;
 }
@@ -1055,6 +1058,9 @@ video {
 	}
     .sm\:items-center {
 		align-items: center;
+	}
+    .sm\:justify-end {
+		justify-content: flex-end;
 	}
     .sm\:border-none {
 		border-style: none;
