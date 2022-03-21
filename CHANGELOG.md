@@ -4,6 +4,22 @@ Release notes for the Lykke Group website.
 
 
 
+## Unreleased
+
+### Added
+- Created Lykke Capital section.
+- Created Press and FAQs pages for Lykke Capital section.
+- Added content for Lykke Capital section, including press items and FAQs.
+
+### Changed
+- Improved home page structure and content.
+
+### Removed
+- Removed team section.
+- Removed Healthcare section.
+
+
+
 ## 0.1.1 - 2021-09-26
 
 ### Added
