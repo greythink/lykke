@@ -10,6 +10,8 @@ Release notes for the Lykke Group website.
 - Created Lykke Capital section.
 - Created Press and FAQs pages for Lykke Capital section.
 - Added content for Lykke Capital section, including press items and FAQs.
+- Created a navigation for Lykke Capital sections.
+- Added the ability to link and navigate to a particular FAQ.
 
 ### Changed
 - Improved home page structure and content.
