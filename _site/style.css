@@ -606,11 +606,11 @@ video {
 	line-height: 1.5rem;
 }
   
-  .prose p {
+  .prose p, .prose ul, .prose ol {
 	margin-bottom: 0.5rem;
 }
   
-  .prose p:last-child {
+  .prose p:last-child, .prose ul:last-child, .prose ol:last-child {
 	margin-bottom: 0px;
 }
   .prose a {
