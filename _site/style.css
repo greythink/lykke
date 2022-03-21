@@ -816,6 +816,9 @@ video {
 .mb-4 {
 	margin-bottom: 1rem;
 }
+.mt-1 {
+	margin-top: 0.25rem;
+}
 .block {
 	display: block;
 }
@@ -964,18 +967,33 @@ video {
 .no-underline {
 	text-decoration: none;
 }
+
+
+
 .last\:mb-0:last-child {
 	margin-bottom: 0px;
 }
+
+
+
 .last\:mb-4:last-child {
 	margin-bottom: 1rem;
 }
+
+
+
 .last\:mr-0:last-child {
 	margin-right: 0px;
 }
+
+
+
 .hover\:underline:hover {
 	text-decoration: underline;
 }
+
+
+
 @media (min-width: 768px) {
     .sm\:container-reset {
 		margin-left: 0px;
@@ -1099,6 +1117,9 @@ video {
 		margin-bottom: 0px;
 	}
 }
+
+
+
 @media (min-width: 1024px) {
 
 	.md\:order-1 {
