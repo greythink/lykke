@@ -1,5 +1,5 @@
 module.exports = [{
-  target: '#services',
+  target: '/#services',
   label: 'Lykke Advisors',
 },{
   target: '/lykke-capital',
