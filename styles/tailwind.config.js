@@ -40,6 +40,7 @@ module.exports = {
       },
       maxWidth: theme => theme('spacing'),
       spacing: {
+        '49ch': '49ch',
         '60ch': '60ch',
         '70ch': '70ch',
       },

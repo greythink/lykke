@@ -801,6 +801,9 @@ video {
 .max-w-70ch {
 	max-width: 70ch;
 }
+.max-w-49ch {
+	max-width: 49ch;
+}
 .list-decimal {
 	list-style-type: decimal;
 }
@@ -911,27 +914,15 @@ video {
 .no-underline {
 	text-decoration: none;
 }
-
-
-
 .last\:mb-0:last-child {
 	margin-bottom: 0px;
 }
-
-
-
 .last\:mb-4:last-child {
 	margin-bottom: 1rem;
 }
-
-
-
 .hover\:underline:hover {
 	text-decoration: underline;
 }
-
-
-
 @media (min-width: 768px) {
     .sm\:container-reset {
 		margin-left: 0px;
@@ -1049,9 +1040,6 @@ video {
 		margin-bottom: 0px;
 	}
 }
-
-
-
 @media (min-width: 1024px) {
 
 	.md\:order-1 {
