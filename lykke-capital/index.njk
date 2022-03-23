@@ -84,12 +84,12 @@
         <ul class="grid grid-cols-2 md:grid-cols-3 gap-x-8">
           {% for company in portfolioList %}
             <li class="mb-8 rounded">
-              <a href="{{ company.url }}">
+              <a class="inline-block group" href="{{ company.url }}">
                 <article>
                   <figure class="mb-1">
                     <img class="h-8" src="{{ company.logo }}" alt="{{ company.url + ' logo' }}">
                   </figure>
-                  <h2 class="title-h4">
+                  <h2 class="title-h4 group-hover:underline">
                     {{ company.title }}
                   </h2>
                 </article>

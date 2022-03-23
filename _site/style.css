@@ -829,6 +829,9 @@ video {
 .block {
 	display: block;
 }
+.inline-block {
+	display: inline-block;
+}
 .flex {
 	display: flex;
 }
@@ -996,6 +999,12 @@ video {
 
 
 .hover\:underline:hover {
+	text-decoration: underline;
+}
+
+
+
+.group:hover .group-hover\:underline {
 	text-decoration: underline;
 }
 
