@@ -35,14 +35,14 @@
   {% if inPageNavItemList and page.url !== '/' %}
     <div class="hidden sm:flex container mt-6 pb-6 justify-end">
       <p class="text-sm mr-4 text-brand-darkest-grey">
-        <a href="/lykke-capital">
+        <a class="hover:underline" href="/lykke-capital">
           Lykke Capital
         </a>
       </p>
       <ul class="flex justify-end text-sm">
       {% for item in inPageNavItemList %}
         <li class="mr-4 last:mr-0">
-          <a class="block" href="{{ item.target }}">
+          <a class="block hover:underline" href="{{ item.target }}">
             {{ item.label }}
           </a>
         </li>
