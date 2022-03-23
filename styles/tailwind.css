@@ -96,6 +96,6 @@
 
   /* Fragment links */
   .fragment-container { @apply sm:-ml-8 sm:pl-8 sm:relative; }
-  .fragment-link { @apply hidden absolute top-0 left-2; }
+  .fragment-link { @apply hidden absolute top-0 left-3; }
   .fragment-container:hover > .fragment-link { @apply sm:block; }
 }
