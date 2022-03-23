@@ -11,4 +11,6 @@ module.exports = function (eleventyConfig) {
     const now = String(Date.now());
     return value + '?v' + now;
   });
+
+  eleventyConfig.addShortcode('currentYear', () => `${new Date().getFullYear()}`);
 };
