@@ -12,6 +12,7 @@ Release notes for the Lykke Group website.
 - Added content for Lykke Capital section, including press items and FAQs.
 - Created a navigation for Lykke Capital sections.
 - Added the ability to link and navigate to a particular FAQ.
+- Added contact information to footer.
 
 ### Changed
 - Improved home page structure and content.
@@ -19,6 +20,7 @@ Release notes for the Lykke Group website.
 ### Removed
 - Removed team section.
 - Removed Healthcare section.
+- Removed legalese links from footer.
 
 
 
