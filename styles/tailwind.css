@@ -41,11 +41,14 @@
   }
   .prose a.button { @apply inline-block px-4 py-2 bg-brand-blue text-white leading-none rounded-sm no-underline; }
   .prose ul { @apply pl-5 list-disc; }
-  .prose ol { @apply pl-4 list-decimal; }
+  .prose ol { @apply pl-5 list-decimal; }
   .prose ul > li,
   .prose ol > li { @apply mb-2 last:mb-0; }
   .prose li > ul > li,
   .prose li > ol > li { @apply mb-0; }
+
+  .prose ul.list-hanging,
+  .prose ol.list-hanging { @apply pl-0; }
 }
 
 

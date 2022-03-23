@@ -645,7 +645,7 @@ video {
 }
   .prose ol {
 	list-style-type: decimal;
-	padding-left: 1rem;
+	padding-left: 1.25rem;
 }
   .prose ul > li, .prose ol > li {
 	margin-bottom: 0.5rem;
@@ -655,6 +655,10 @@ video {
 }
   .prose li > ul > li, .prose li > ol > li {
 	margin-bottom: 0px;
+}
+
+  .prose ul.list-hanging, .prose ol.list-hanging {
+	padding-left: 0px;
 }
 .container {
 	width: 100%;
@@ -967,18 +971,33 @@ video {
 .no-underline {
 	text-decoration: none;
 }
+
+
+
 .last\:mb-0:last-child {
 	margin-bottom: 0px;
 }
+
+
+
 .last\:mb-4:last-child {
 	margin-bottom: 1rem;
 }
+
+
+
 .last\:mr-0:last-child {
 	margin-right: 0px;
 }
+
+
+
 .hover\:underline:hover {
 	text-decoration: underline;
 }
+
+
+
 @media (min-width: 768px) {
     .sm\:container-reset {
 		margin-left: 0px;
@@ -1102,6 +1121,9 @@ video {
 		margin-bottom: 0px;
 	}
 }
+
+
+
 @media (min-width: 1024px) {
 
 	.md\:order-1 {
