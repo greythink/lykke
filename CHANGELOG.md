@@ -4,7 +4,7 @@ Release notes for the Lykke Group website.
 
 
 
-## Unreleased
+## 1.0.0 - 2022-03-25
 
 ### Added
 - Created Lykke Capital section.
