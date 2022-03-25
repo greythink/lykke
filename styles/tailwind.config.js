@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: '1.5rem',
+      padding: '2.5rem',
       screens: {
         'sm': '768px',
         'md': '1024px',
@@ -35,10 +35,13 @@ module.exports = {
           'light-grey': '#F3F4F6',
           'dark-grey': '#D4D4D4',
           'darker-grey': '#A3A3A3',
+          'darkest-grey': '#78716C',
+          'blue': '#0284C7',
         },
       },
       maxWidth: theme => theme('spacing'),
       spacing: {
+        '49ch': '49ch',
         '60ch': '60ch',
         '70ch': '70ch',
       },

@@ -1,5 +1,5 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.setTemplateFormats('njk');
+  eleventyConfig.setTemplateFormats(['njk', 'md']);
   
   eleventyConfig.addWatchTarget('./styles/');
   eleventyConfig.addWatchTarget('./scripts/');
@@ -10,5 +10,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('version', function (value) {
     const now = String(Date.now());
     return value + '?v' + now;
-  })
+  });
+
+  eleventyConfig.addShortcode('currentYear', () => `${new Date().getFullYear()}`);
 };

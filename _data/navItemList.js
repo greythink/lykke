@@ -1,10 +1,7 @@
 module.exports = [{
-  target: '#services',
-  label: 'Advisory',
+  target: '/#services',
+  label: 'Lykke Advisors',
 },{
-  target: '#services',
-  label: 'Investments',
-},{
-  target: '/services/healthcare',
-  label: 'Healthcare',
+  target: '/lykke-capital',
+  label: 'Lykke Capital',
 }];

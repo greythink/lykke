@@ -1,0 +1,38 @@
+---
+eleventyExcludeFromCollections: true
+permalink: "lykke-capital/faqs/index.html"
+---
+
+
+
+{% extends 'lykke-capital/index.njk' %}
+
+
+
+{% block content %}
+  <main class="container my-16 sm:mt-20 sm:mb-24">
+    <section class="mb-16 sm:mb-24">
+      <h2 class="title-h1">
+        Frequently Asked Questions
+      </h2>
+      <section class="mb-8 last:mb-0">
+        <ul>
+          {% for faq in collections.faqs %}
+            {% set faqId = faq.data.title|slug %}
+            <li class="mb-8 fragment-container" id="{{ faqId }}">
+              <a class="text-lg text-brand-darker-grey fragment-link" href="{{ '#' + faqId }}">
+                #
+              </a>
+              <h3 class="mb-2 text-xl max-w-49ch left-6">
+                {{ faq.data.title }}
+              </h3>
+              <div class="text-sm max-w-70ch prose">
+                {{ faq.templateContent|safe }}
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    </section>
+  </main>
+{% endblock %}
