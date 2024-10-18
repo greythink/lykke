@@ -4,6 +4,13 @@ Release notes for the Lykke Group website.
 
 
 
+## 1.0.1 - 2022-07-15
+
+### Changed
+- Allow website to be indexed by search engines.
+
+
+
 ## 1.0.0 - 2022-03-25
 
 ### Added
